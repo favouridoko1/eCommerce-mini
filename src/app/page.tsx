@@ -1,5 +1,5 @@
 import React from "react";
-import { bottle, group, group2, group3, group4 } from "../assets";
+import { blob, bottle, flower, group, group2, group3, group4 } from "../assets";
 import Image from "next/image";
 const categories = [
   {
@@ -54,11 +54,35 @@ const Home = () => {
                     : "bg-[#F9FAFB] text-[#5FD788]"
                 }`}
               >
-                <div className="mb-4"><Image alt="" src={icon} /></div>
+                <div className="mb-4">
+                  <Image alt="" src={icon} />
+                </div>
                 <h3 className="text-sm font-medium">{title}</h3>
               </article>
             ))}
           </div>
+        </section>
+        <section className="md:px-[85px] flex items-center justify-between gap-[120px] relative h-[887.68px]">
+          {/* Absolute positioned Image */}
+          <Image src={blob} alt="A blob" className="absolute top-15 -left-10 z-0" />
+          <figure className="max-w-[601.28369140625px] z-20">
+            <Image alt="A flower" src={flower} className="z-20" />
+          </figure>
+          <article className="flex flex-col items-end gap-6">
+            <h3 className="font-semibold text-end md:text-[40px] tracking-[1%] text-[#5FD788] leading-[108%] max-w-[673px] ">
+              Improve your well-being with Aromatherapy
+            </h3>
+            {/* <h3 className="font-semibold text-end md:text-[40px] tracking-[1%] text-[#5FD788] leading-[108%] ">
+            </h3> */}
+            <p className="text-[#9CA3AF] text-sm text-end font-semibold tracking-[0px] leading-[140%] max-w-[404px]">
+              Diffusing can be exactly what you need to add purpose and focus to
+              your daily tasks. We've got tons of fun diffuser blends, with
+              scents to suit every mood, day and situation.
+            </p>
+            <button className="bg-[#5FD788] text-white rounded-lg text-base font-bold px-8 py-2">
+              Explore the Collection
+            </button>
+          </article>
         </section>
       </main>
     </>

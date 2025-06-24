@@ -4,3 +4,5 @@ export {default as group} from "./Group.png";
 export {default as group2} from "./Group (1).png";
 export {default as group3} from "./Group (2).png";
 export {default as group4} from "./Group (3).png";
+export {default as flower} from "./flower.png";
+export {default as blob} from "./Blob.png";
