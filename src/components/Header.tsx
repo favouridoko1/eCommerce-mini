@@ -1,4 +1,4 @@
-import { logo } from "@/app/assets";
+import { logo } from "@/assets";
 import { LuSearch } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
